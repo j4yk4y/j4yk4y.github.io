@@ -46,9 +46,18 @@ main {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+h1, h2 {
   color: #333;
 }
+
 
 /* Footer Styles */
 footer {
