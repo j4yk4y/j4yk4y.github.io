@@ -11,43 +11,29 @@ body {
 }
 
 .language-switcher {
-  position: relative;
   display: inline-block;
-  width: 120px;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-.language-switcher select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  background-color: transparent;
-  padding: 5px 25px 5px 5px;
-  font-size: 16px;
-  color: #34435E;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
+.language-switcher a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.language-switcher::before {
-  content: '\f0ac';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  top: 50%;
-  right: 35px;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: #34435E;
-  pointer-events: none;
+.language-switcher a i {
+  margin-right: 5px;
 }
 
-@media (max-width: 768px) {
-  .language-switcher select {
-    padding-right: 25px;
-  }
+.language-switcher a:hover {
+  color: #FC832B;
+  background: none;
 }
+
 
 /* Navigation Styles */
 nav {

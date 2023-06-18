@@ -1,27 +1,27 @@
-// JavaScript code
-document.addEventListener('DOMContentLoaded', function() {
-    var languageSelect = document.getElementById('language-select');
+// Get the language select element
+const languageSelect = document.getElementById('language-select');
 
-    languageSelect.addEventListener('change', function() {
-        var selectedLanguage = this.value;
+// Add an event listener to the language select element
+languageSelect.addEventListener('change', function() {
+    // Get the selected language value
+    const selectedLanguage = this.value;
 
-        fetchTranslation(selectedLanguage);
-    });
+    // Get the current URL
+    const currentURL = window.location.href;
 
-    function fetchTranslation(language) {
-        fetch(language + '.json')
-            .then(response => response.json())
-            .then(data => updateContent(data));
+    // Check if the current page is in the default language
+    const isDefaultLanguage = currentURL.includes('/en/');
+
+    // Construct the URL for the corresponding language version
+    let newURL;
+    if (selectedLanguage === 'de' && isDefaultLanguage) {
+        newURL = currentURL.replace('/en/', '/de/');
+    } else if (selectedLanguage === 'en' && !isDefaultLanguage) {
+        newURL = currentURL.replace('/de/', '/en/');
     }
 
-    function updateContent(translations) {
-        var translationKeys = Object.keys(translations);
-
-        translationKeys.forEach(function(key) {
-            var element = document.getElementById(key);
-            if (element) {
-                element.textContent = translations[key];
-            }
-        });
+    // Navigate to the new URL
+    if (newURL) {
+        window.location.href = newURL;
     }
 });
