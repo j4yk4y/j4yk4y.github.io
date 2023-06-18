@@ -27,6 +27,7 @@ body {
 
 .language-switcher a i {
   margin-right: 5px;
+  color: #333; /* Same color as text */
 }
 
 .language-switcher a:hover {
@@ -46,7 +47,7 @@ nav {
 
 nav #logo {
   /* Adjust as needed */
-  width: 300px; /* Increased logo size */
+  width: 400px; /* Increased logo size */
 }
 
 nav #logo img {
@@ -83,23 +84,20 @@ nav a:hover {
 }
 
 /* Main Content Styles */
-/* styles.css */
-
-/* ...existing styles... */
-
-/* Main Content Styles */
 main {
-  margin: 0;
+  margin: 0 auto; /* Center the main content */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .container {
   border: 1px solid #F5F5F5;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-radius: 5px;
   background: #F5F5F5;
   color: #34435E;
@@ -119,7 +117,7 @@ main {
 }
 
 #hero p {
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin-bottom: 40px;
 }
 
@@ -163,6 +161,52 @@ main {
   line-height: 1.6;
 }
 
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutText {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#aboutImage {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#aboutImageContainer {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+#cv {
+  background-color: #FC832B;
+  color: #F5F5F5;
+  margin-top: 20px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#cv:hover {
+  background-color: #E7600D;
+}
+
 /* Footer Styles */
 footer {
   background: #34435E;
@@ -170,4 +214,5 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-size: 1.1em;
+  margin-top: 40px;
 }
