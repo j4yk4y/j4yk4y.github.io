@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <!-- Logo placeholder -->
-          <img src="img/logo.png" alt="Logo">
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Welcome to My Website!</h1>
-      <div class="container">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum convallis massa quis feugiat.</p>
-      </div>
-      <div class="container">
-        <h2>My Skills</h2>
-        <p>Vivamus vulputate pellentesque ligula non mollis. Fusce dapibus diam id diam iaculis, ut rutrum orci ultricies.</p>
-      </div>
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Ut dapibus, augue et dapibus condimentum, nisl nunc ultrices nunc, id condimentum est risus non ex.</p>
-      </div>
-    </main>
-    <footer>
-      <p>© 2023 My Website</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>My Freelancer Website</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" href="img/Favicon%20Transparent.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+  <nav>
+    <div id="logo">
+      <img src="img/Transparent%20Logo.png" alt="Logo" class="logo-image">
+    </div>
+    <ul>
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="services.html" id="services">Services</a></li>
+      <li><a href="portfolio.html" id="portfolio">Portfolio</a></li>
+      <li><a href="contact.html" id="contact">Contact</a></li>
+    </ul>
+    <div class="language-switcher">
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+  </nav>
+</header>
+<main>
+  <section id="hero">
+    <h1 id="welcome">Welcome to My Freelancer Website</h1>
+    <p id="heroSubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum convallis massa quis feugiat.</p>
+    <a href="contact.html" id="getInTouch" class="cta-button">Get in Touch</a>
+  </section>
+  <section id="services">
+    <h2 id="servicesHeading">Services</h2>
+    <div class="service">
+      <h3 id="service1">Service 1</h3>
+      <p id="service1Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu sapien ac mauris pharetra semper. Nulla facilisi.</p>
+    </div>
+    <div class="service">
+      <h3 id="service2">Service 2</h3>
+      <p id="service2Content">Curabitur posuere semper sem, eu vestibulum nunc eleifend vel. Nullam consectetur consequat mauris, et luctus lorem cursus in.</p>
+    </div>
+    <div class="service">
+      <h3 id="service3">Service 3</h3>
+      <p id="service3Content">Phasellus lobortis justo id ligula malesuada efficitur. Morbi efficitur condimentum mi, non eleifend nulla commodo ut.</p>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h2 id="portfolioHeading">Portfolio</h2>
+    <div class="project">
+      <h3 id="project1">Project 1</h3>
+      <img src="img/project1.jpg" alt="Project 1">
+    </div>
+    <div class="project">
+      <h3 id="project2">Project 2</h3>
+      <img src="img/project2.jpg" alt="Project 2">
+    </div>
+    <div class="project">
+      <h3 id="project3">Project 3</h3>
+      <img src="img/project3.jpg" alt="Project 3">
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2 id="testimonialsHeading">Testimonials</h2>
+    <div class="testimonial">
+      <p id="testimonial1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum convallis massa quis feugiat."</p>
+      <p id="testimonial1Author">- Client A</p>
+    </div>
+    <div class="testimonial">
+      <p id="testimonial2">"Curabitur posuere semper sem, eu vestibulum nunc eleifend vel. Nullam consectetur consequat mauris, et luctus lorem cursus in."</p>
+      <p id="testimonial2Author">- Client B</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p id="footerText">&copy; 2023 My Freelancer Website</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
 </html>
