@@ -1,0 +1,22 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.project
+.idea
+.vscode
+
+# Jekyll build folder
+_site/
+
+# Jekyll serve
+.sass-cache/
+.jekyll-cache/
+
+# Windows
+Desktop.ini

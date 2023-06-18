@@ -1,66 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataPathfinder</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="icon" href="img/Favicon%20Transparent.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-qkrwzyUowLKGIM5e4Ln2zkuqjOCgiqCvK1/3E4khJ9NSW0quSrmMyEQu8Y2wyoZhnG0dfF+nqAt+yVU2Tv0OJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<header>
-  <nav>
-    <div id="logo">
-      <img src="img/Transparent%20Logo.png" alt="Logo" class="logo-image">
-    </div>
-    <ul>
-      <li><a href="index.html" id="home">Home</a></li>
-      <li><a href="en/services.html" id="services_nav">Services</a></li>
-      <li><a href="en/portfolio.html" id="portfolio_nav">Portfolio</a></li>
-      <li><a href="en/contact.html" id="contact_nav">Contact</a></li>
-    </ul>
-    <div class="language-switcher">
-      <a href="/de/index.html" id="language-link">
-        <i class="fas fa-globe"></i>
-        Deutsch
-      </a>
-    </div>
-  </nav>
-</header>
+---
+layout: default
+---
+
 <main>
   <section id="hero">
     <h1 id="welcome">Welcome to DataPathfinder</h1>
-    <p id="heroSubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum convallis massa quis feugiat.</p>
-    <a href="en/contact.html" id="getInTouch" class="cta-button">Get in Touch</a>
+    <p id="heroSubtitle">
+      Unleash the power of data with DataPathfinder. DataPathfinder is specializing in statistics,
+      data science, ML engineering, and data engineering. With curiosity and professionalism at the core of our approach,
+      we embark on a transformative journey of exploring data, uncovering valuable insights, and empowering decision-making.
+      Let us guide you through the dynamic world of data, unlocking opportunities that drive innovation and growth. Partner
+      with DataPathfinder today and dare to embark on your data-driven journey.
+    </p>
+    <div id="productContainer">
+      <div class="product">
+        <img src="img/product1.jpg" alt="Product 1" class="product-image">
+        <p class="product-description">Data-driven decision making.</p>
+      </div>
+      <div class="product">
+        <img src="img/product2.jpg" alt="Product 2" class="product-image">
+        <p class="product-description">Data pipelines and automation</p>
+      </div>
+      <div class="product">
+        <img src="img/product3.jpg" alt="Product 3" class="product-image">
+        <p class="product-description">Software Developement.</p>
+      </div>
+    </div>
+    <a href="{{ '/contact.html' | relative_url }}" id="getInTouch" class="cta-button">Get in Touch</a>
   </section>
-  <section id="services">
-    <h2 id="servicesHeading">Services</h2>
-    <div class="service">
-      <h3 id="service1">Service 1</h3>
-      <p id="service1Content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu sapien ac mauris pharetra semper. Nulla facilisi.</p>
+  <section id="about">
+    <h2 id="aboutHeading">About Us</h2>
+    <div class="about-row">
+      <div class="about-text">
+        <p>Hi, my name is Remo and I am founder of DataPathfinder and a researcher at the University of Applied Sciences in Lucerne. I am passionate about
+          data and I am fascinated by problem solving. I have a background in statistics and marketing with a master’s degree in data science.
+          I have experience in data science, machine learning, and data engineering. I am a curious person and I have a passion for
+          Linux and open source software. I am looking forward to working with you.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="/img/me_img.jpg" alt="About Us Image" id="aboutImage">
+      </div>
     </div>
-    <div class="service">
-      <h3 id="service2">Service 2</h3>
-      <p id="service2Content">Curabitur posuere semper sem, eu vestibulum nunc eleifend vel. Nullam consectetur consequat mauris, et luctus lorem cursus in.</p>
-    </div>
-    <div class="service">
-      <h3 id="service3">Service 3</h3>
-      <p id="service3Content">Phasellus lobortis justo id ligula malesuada efficitur. Morbi efficitur condimentum mi, non eleifend nulla commodo ut.</p>
-    </div>
-  </section>
-  <section id="portfolio">
-    <h2 id="portfolioHeading">Portfolio</h2>
-    <div class="project">
-      <h3 id="project1">Project 1</h3>
-      <img src="img/project1.jpg" alt="Project 1">
-    </div>
-    <div class="project">
-      <h3 id="project2">Project 2</h3>
-      <img src="img/project2.jpg" alt="Project 2">
-    </div>
-    <div class="project">
-      <h3 id="project3">Project 3</h3>
-      <img src="img/project3.jpg" alt="Project 3">
+    <div class="about-row">
+      <a href="{{ '/cv.html' | relative_url }}" id="cv" class="cta-button">More about me</a>
     </div>
   </section>
   <section id="testimonials">
@@ -75,9 +58,3 @@
     </div>
   </section>
 </main>
-<footer>
-  <p id="footerText">&copy; 2023 DataPathfinder</p>
-</footer>
-<script src="js/script.js"></script>
-</body>
-</html>

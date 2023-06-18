@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | relative_url }}">
+    <link rel="icon" href="{{ '/img/favicon_transparent.ico' | relative_url }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-qkrwzyUowLKGIM5e4Ln2zkuqjOCgiqCvK1/3E4khJ9NSW0quSrmMyEQu8Y2wyoZhnG0dfF+nqAt+yVU2Tv0OJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <nav>
+        <div id="logo">
+            <img src="{{ '/img/logo_transparent.png' | relative_url }}" alt="Logo" class="logo-image">
+        </div>
+        <ul>
+            <li><a href="{{ '/' | relative_url }}" id="home">Home</a></li>
+            <li><a href="{{ '/services.html' | relative_url }}" id="services_nav">Services</a></li>
+            <li><a href="{{ '/portfolio.html' | relative_url }}" id="portfolio_nav">Portfolio</a></li>
+            <li><a href="{{ '/contact.html' | relative_url }}" id="contact_nav">Contact</a></li>
+            <li><a href="{{ '/cv.html' | relative_url }}" id="cv_nav">CV</a> </li>
+        </ul>
+        <div class="language-switcher">
+            <a href="{{ '/index.html' | relative_url }}" id="language-link">
+                <i class="fas fa-globe"></i>
+                Deutsch
+            </a>
+        </div>
+    </nav>
+</header>
+
+{{ content }}
+
+<footer>
+    <p id="footerText">&copy; 2023 DataPathfinder</p>
+</footer>
+<script src="{{ '/js/script.js' | relative_url }}"></script>
+</body>
+</html>
